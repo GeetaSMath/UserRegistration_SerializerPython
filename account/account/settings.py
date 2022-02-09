@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'user',
+    # 'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'account.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sql_demo',
+        'NAME': 'rest_api',
         'USER': 'postgres',
         'PASSWORD': 'Geeta@123',
         'HOST': 'Localhost',

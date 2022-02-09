@@ -1,0 +1,6 @@
+Django~=4.0.2
+views~=0.3
+djangorestframework~=3.13.1
+serializers~=0.2.4
+PyJWT~=2.3.0
+psycopg2==2.9.3
