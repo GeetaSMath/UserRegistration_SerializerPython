@@ -1,14 +1,14 @@
 import jwt
 
 class TokenGenerate():
-    def encode_token(self, username,password):
+    def encode_token(self, username, password):
         """
             desc: this function will encode the payload into a token
             param: id: it is a user id
             return: token id
         """
         key = 'geetasmath123654';
-        payload = {"username": username,"password":password}
+        payload = {"username": username, "password":password}
         token = jwt.encode(payload, key,)
         return token
 
@@ -19,6 +19,6 @@ class TokenGenerate():
             return: decoded user id
         """
         key = 'geetasmath123654'
-        decoded = jwt.decode(encoded, key ,algorithms=["HS256"])
+        decoded = jwt.decode(encoded, key, algorithms=["HS256"])
         print(decoded)
         return decoded['username'], decoded['password']
